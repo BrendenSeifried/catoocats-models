@@ -6,3 +6,6 @@ CREATE table cats (
     id BIGINT GENERATED ALWAYS AS IDENTITY,
     name VARCHAR NOT NULL
 );
+
+INSERT INTO cats (name) VALUES ('Tiger');
+
