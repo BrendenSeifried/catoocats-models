@@ -6,19 +6,21 @@ Drop table if exists cats;
 CREATE table cats (
     id BIGINT GENERATED ALWAYS AS IDENTITY,
     name VARCHAR NOT NULL,
-    -- type VARCHAR NOT NULL 
+    type VARCHAR NOT NULL, 
+    url VARCHAR NOT NULL,
+    year INT NOT NULL
 );
 
-INSERT INTO cats (name) VALUES ('Felix'), ('Garfield'), ('Duchess'), ('Stimpy'), ('Sylvester'), ('Tigger'), ('Hello Kitty'), ('Hobbes') ;
+INSERT INTO cats (name, type, url, year) VALUES ('Felix', 'Tuxedo', 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Felix_the_cat.svg/200px-Felix_the_cat.svg.png',  1892), ('Garfield', 'Orange Tabby', 'https://static.wikia.nocookie.net/garfield/images/9/9f/GarfieldCharacter.jpg', 1978), ('Duchess', 'Angora', 'https://static.wikia.nocookie.net/disney/images/e/eb/Profile_-_Duchess.jpeg', 1970), ('Stimpy', 'Manx', 'https://static.wikia.nocookie.net/renandstimpy/images/c/c1/Ren-stimpy-25-anniversar-hp2.png', 1990), ('Sylvester', 'Tuxedo', 'https://static.wikia.nocookie.net/charactercommunity/images/7/73/SylvesterDance.png', 1945), ('Tigger', 'Tiger', 'https://www.pinclipart.com/picdir/big/150-1504133_tigger-tigger-cartoon-me-clipart-png-image-download.png', 1928), ('Hello Kitty', 'Angora', 'https://cdn.shopify.com/s/files/1/0054/4371/5170/products/FiGPiN_360HelloKittySANRIOPIN.png?v=1627413934', 1974), ('Hobbes', 'Tiger', 'https://sketchok.com/images/articles/01-cartoons/000-va/102/10.jpg', 1974) ;
 
-INSERT INTO cats (type) VALUES ('Tuxedo'), ('Orange Tabby'), ('Angora'), ('Manx'), ('Tuxedo'), ('Tiger'), ('Angora'), ('Tiger') ;
+-- INSERT INTO cats (type) VALUES ('Tuxedo'), ('Orange Tabby'), ('Angora'), ('Manx'), ('Tuxedo'), ('Tiger'), ('Angora'), ('Tiger') ;
 
--- INSERT INTO cats (url) VALUES ('Felix'), ('Garfield'), ('Duchess'), ('Stimpy'), ('Sylvester'), ('Tigger'), ('Hello Kitty'), ('Hobbes') ;
+-- INSERT INTO cats (url) VALUES ('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Felix_the_cat.svg/200px-Felix_the_cat.svg.png'), ('https://static.wikia.nocookie.net/garfield/images/9/9f/GarfieldCharacter.jpg'), ('https://static.wikia.nocookie.net/disney/images/e/eb/Profile_-_Duchess.jpeg'), ('https://static.wikia.nocookie.net/renandstimpy/images/c/c1/Ren-stimpy-25-anniversar-hp2.png'), ('https://static.wikia.nocookie.net/charactercommunity/images/7/73/SylvesterDance.png'), ('https://www.pinclipart.com/picdir/big/150-1504133_tigger-tigger-cartoon-me-clipart-png-image-download.png'), ('https://cdn.shopify.com/s/files/1/0054/4371/5170/products/FiGPiN_360HelloKittySANRIOPIN.png?v=1627413934'), ('https://sketchok.com/images/articles/01-cartoons/000-va/102/10.jpg') ;
 
--- INSERT INTO cats (year) VALUES ('Felix'), ('Garfield'), ('Duchess'), ('Stimpy'), ('Sylvester'), ('Tigger'), ('Hello Kitty'), ('Hobbes') ;
+-- INSERT INTO cats (year) VALUES ('1892'), ('1978'), ('1970'), ('1990'), ('1945'), ('1928'), ('1974'), ('1985') ;
 
--- INSERT INTO cats (lives) VALUES ('Felix'), ('Garfield'), ('Duchess'), ('Stimpy'), ('Sylvester'), ('Tigger'), ('Hello Kitty'), ('Hobbes') ;
+-- INSERT INTO cats (lives) VALUES ('3'), ('7'), ('9'), ('1'), ('1'), ('8'), ('9'), ('6') ;
 
--- INSERT INTO cats (isSideKick) VALUES ('Felix'), ('Garfield'), ('Duchess'), ('Stimpy'), ('Sylvester'), ('Tigger'), ('Hello Kitty'), ('Hobbes') ;
+-- INSERT INTO cats (isSideKick) VALUES ('false'), ('false'), ('false'), ('true'), ('true'), ('false'), ('false'), ('true') ;
 
 
